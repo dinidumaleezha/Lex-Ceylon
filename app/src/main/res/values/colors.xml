@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC6</color>
+
+    <!-- Background & Surface -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#F5F5F5</color>
+
+    <!-- Text Colors -->
+    <color name="textTitle">#000000</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+
+    <!-- Button Colors -->
+    <color name="buttonBackground">#0080ff</color>
+    <color name="buttonText">#FFFFFF</color>
+
+    <!-- Border -->
+    <color name="borderColor">#DDDDDD</color>
+
+    <!-- Error -->
+    <color name="colorError">#B00020</color>
+
+    <color name="switch_thumb_color">#FFFFFF</color> <!-- thumb color -->
+    <color name="switch_off_color">#B0B0B0</color>   <!-- track color when off -->
+    <color name="switch_color">#4CD964</color>       <!-- track color when on -->
+
+    <color name="card_question_bg">#E3F2FD</color>  <!-- light blue -->
+    <color name="card_law_bg">#FFFDE7</color>       <!-- light yellow -->
+    <color name="card_advice_bg">#E8F5E9</color>    <!-- light green -->
+    <color name="card_authority_bg">#FFF3E0</color> <!-- light orange -->
+    <color name="card_disclaimer_bg">#FFEBEE</color> <!-- light red/pink -->
+
+
+</resources>

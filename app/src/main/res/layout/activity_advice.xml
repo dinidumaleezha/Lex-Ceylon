@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Activity.AdviceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBackground">
+
+        <!-- Toolbar -->
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:titleTextColor="@android:color/white"
+            app:titleCentered="true">
+
+            <RelativeLayout
+                android:id="@+id/backBtnContainer"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/nav_circle_bg">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/back_icon"
+                    android:tint="@color/textPrimary"
+                    tools:ignore="UseAppTint" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/email_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI Legal Advice"
+                android:textColor="@color/textTitle"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:layout_marginStart="50dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorSurface"
+            android:alpha="0.8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/colorBackground">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/adviceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need Help with any Leagal Issue?"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/adviceSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Describe your issue below. We'll analyze it and provide advice using AI."
+                android:textSize="16sp"
+                android:textColor="@color/textSecondary"
+                android:layout_marginBottom="16dp" />
+
+            <!-- AI Prompt Input Area -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/input_bg"
+                android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/email_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Describe your issue clearly (e.g., I received a suspicious email)"
+                    android:textColor="@color/textPrimary"
+                    android:textColorHint="#AAAAAA"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:background="@android:color/transparent"
+                    android:maxLines="8" />
+            </RelativeLayout>
+
+            <!-- Analyze Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/analyzeButtonCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/buttonBackground"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:id="@+id/send_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Analyze and Get Advice"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/transparent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textAllCaps="false" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

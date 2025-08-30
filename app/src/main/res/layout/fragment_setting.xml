@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Fragment.SettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Section Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_setting"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/textSecondary"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Settings Card -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="6dp"
+                android:background="@drawable/card_item_bg2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Language Option -->
+                    <RelativeLayout
+                        android:id="@+id/languageBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="5dp">
+
+                        <ImageView
+                            android:id="@+id/languageIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/globe_icon"
+                            app:tint="@color/textSecondary" />
+
+                        <TextView
+                            android:id="@+id/tvSinhala"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/change_language"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/languageIcon"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/textPrimary" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginEnd="8dp"
+                            android:alpha="0.5"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ios_arrow_rtl_icon"
+                            android:layout_alignParentEnd="true"
+                            app:tint="@color/textSecondary" />
+                    </RelativeLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:alpha="0.4"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/borderColor" />
+
+                    <!-- Appearance Option with Switch -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="5dp">
+
+                        <ImageView
+                            android:id="@+id/darkModeIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardElevation="6dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/dark_mode_n"
+                            app:tint="@color/textSecondary" />
+
+                        <TextView
+                            android:id="@+id/appearanceLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dark_mode"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/textPrimary"
+                            android:layout_toEndOf="@id/darkModeIcon"
+                            android:layout_marginStart="16dp"
+                            android:layout_centerVertical="true" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/switchDarkMode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="8dp"
+                            app:thumbIconTint="@color/white"
+                            app:trackColorActive="@color/black"
+                            app:trackColorInactive="@color/textSecondary" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Section Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/textSecondary"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Settings Card -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="6dp"
+                android:background="@drawable/card_item_bg2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Language Option -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="5dp">
+
+                        <ImageView
+                            android:id="@+id/updatesIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/update_icon"
+                            app:tint="@color/textSecondary" />
+
+                        <TextView
+                            android:id="@+id/tvUpdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/check_for_updates"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/updatesIcon"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/textPrimary"
+                            tools:ignore="RelativeOverlap" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="v1.01"
+                            android:layout_marginStart="14dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/_8sdp"
+                            android:layout_marginEnd="8dp"
+                            android:textColor="@color/borderColor" />
+                    </RelativeLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:alpha="0.4"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/borderColor" />
+
+                    <!-- Appearance Option with Switch -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="5dp">
+
+                        <ImageView
+                            android:id="@+id/privacyIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:cardElevation="6dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/privacy_icon"
+                            app:tint="@color/textSecondary" />
+
+                        <TextView
+                            android:id="@+id/tvPrivacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/privacy_policy"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/textPrimary"
+                            android:layout_toEndOf="@id/privacyIcon"
+                            android:layout_marginStart="16dp"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="6dp"
+                android:background="@drawable/card_item_bg2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Language Option -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="5dp">
+
+                        <ImageView
+                            android:id="@+id/contactIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/call_icon"
+                            app:tint="@color/textSecondary" />
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contact_us"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/contactIcon"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/textPrimary" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="6dp"
+                android:background="@drawable/card_item_bg2">
+
+                <LinearLayout
+                    android:id="@+id/logoutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Language Option -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="5dp">
+
+                        <ImageView
+                            android:id="@+id/logOutIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/log_out_icon"
+                            app:tint="#FF0000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Log out"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/logOutIcon"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="#FF0000" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

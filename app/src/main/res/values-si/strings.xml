@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LexCeylon</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+<!--    sinhala string-->
+    <string name="change_language">භාෂාව වෙනස් කරන්න</string>
+    <string name="contact_us">අපව අමතන්න</string>
+    <string name="dark_mode">අඳුරු තේමාව</string>
+    <string name="check_for_updates">යාවත්කාලීන තිබේද බලන්න</string>
+    <string name="privacy_policy">රහස්‍යතා ප්‍රතිපත්තිය</string>
+    <string name="settings">සැකසුම්</string>
+    <string name="app_setting">App සැකසුම්</string>
+    <string name="you_have_no_new_notifications">ඔබට නව දැනුම්දීම් නොමැත.</string>
+    <string name="notification">දැනුම්දීම්</string>
+    <string name="good_morning">සුභ උදෑසනක්!</string>
+    <string name="get_ai_legal_advice">AI නීති උපදෙස් ලබා ගන්න</string>
+    <string name="ask_questions_about_your_legal_issues_and_get_instant_ai_powered_answers">ඔබගේ නීතිමය ගැටළු පිළිබඳව ප්‍රශ්න අසන්න සහ ක්ෂණික AI බලයෙන් ක්‍රියාත්මක වන පිළිතුරු ලබා ගන්න.</string>
+    <string name="recent_chat">මෑත කතාබහ</string>
+    <string name="enter_a_short_idea_or_request_here">කෙටි අදහසක් හෝ ඉල්ලීමක් මෙහි ඇතුළත් කරන්න...</string>
+    <string name="good_afternoon">සුභ මධ්‍යහන්වක්!</string>
+    <string name="good_evening">සුභ සැන්දෑවක්!</string>
+    <string name="good_night">සුභ රාත්‍රියක්!</string>
+    <string name="ai_language">Sinhala</string>
+
+    <!-- Buttons -->
+    <string name="copy_advice">ඇඩ්වයිස් පිටපත් කරන ලදී!</string>
+
+    <!-- Section Titles -->
+    <string name="question">ප්‍රශ්නය</string>
+    <string name="law">වගන්තිය</string>
+    <string name="summary">සාරාංශය</string>
+    <string name="authority">අධිකාරිය</string>
+    <string name="disclaimer">අවසන් සටහන</string>
+
+    <!-- Bullet Prefixes -->
+    <string name="section_prefix">වගන්තිය: </string>
+    <string name="title_prefix">ශීර්ෂය: </string>
+    <string name="summary_prefix">සාරාංශය: </string>
+    <string name="warning_prefix">අවවාද: </string>
+    <string name="confidence_prefix">විශ්වාසය: </string>
+    <string name="admin_level_prefix">පරිපාලන මට්ටම: </string>
+    <string name="how_to_file_prefix">කෙසේ ඉදිරිපත් කරන්නේද: </string>
+    <string name="fee_prefix">ගාස්තු: </string>
+    <string name="deadline_prefix">කාලසීමාව: </string>
+    <string name="documents_prefix">ලේඛන: </string>
+    <string name="contact_prefix">සම්බන්ධතා: </string>
+    <string name="location_prefix">ස්ථානය: </string>
+    <string name="online_url_prefix">අන්තර්ජාලය: </string>
+
+    <!-- Toasts / Errors -->
+    <string name="network_error">ජාල දෝෂයක්: %1$s</string>
+    <string name="parse_error">පැර්ස් දෝෂයක්: %1$s</string>
+
+</resources>

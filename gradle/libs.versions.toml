@@ -1,0 +1,74 @@
+[versions]
+agp = "8.6.1"
+appcompatVersion = "1.4.1"
+cupertinoswitch = "1.0.0"
+firebaseAuthVersion = "22.3.0"
+firebaseDatabaseVersion = "20.3.0"
+gson = "2.10.1"
+iosSwitchview = "1.0.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+library = "2.1.0"
+libraryVersion = "1.5.0"
+lottie = "6.3.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+okhttpVersion = "4.12.0"
+playServicesAuth = "21.3.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseDatabase = "21.0.0"
+firebaseAuth = "23.2.1"
+credentials = "1.5.0"
+credentialsPlayServicesAuth = "1.5.0"
+googleid = "1.1.1"
+recyclerview = "1.3.1"
+recyclerviewSwipedecorator = "1.4"
+sdpAndroid = "1.1.1"
+switchbutton = "2.0.0"
+switchbuttonVersion = "1.0.0"
+toggle = "1.1.0"
+navigationFragment = "2.6.0"
+navigationUi = "2.6.0"
+
+[libraries]
+appcompat-v141 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+cupertinoswitch = { module = "io.github.vejei.cupertinoswitch:cupertinoswitch", version.ref = "cupertinoswitch" }
+firebase-auth-v2230 = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuthVersion" }
+firebase-database-v2030 = { module = "com.google.firebase:firebase-database", version.ref = "firebaseDatabaseVersion" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+ios-switchview = { module = "com.github.luongvo:iOS-SwitchView", version.ref = "iosSwitchview" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+library = { module = "com.kyleduo.switchbutton:library", version.ref = "library" }
+library-v150 = { module = "com.kyleduo.switchbutton:library", version.ref = "libraryVersion" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+okhttp3-okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttpVersion" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+credentials = { group = "androidx.credentials", name = "credentials", version.ref = "credentials" }
+credentials-play-services-auth = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+recyclerview-swipedecorator = { module = "it.xabaras.android:recyclerview-swipedecorator", version.ref = "recyclerviewSwipedecorator" }
+sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
+switchbutton = { module = "com.github.kyleduo:SwitchButton", version.ref = "switchbutton" }
+systembugtj-switchbutton = { module = "com.github.systembugtj:SwitchButton", version.ref = "switchbuttonVersion" }
+toggle = { module = "com.github.angads25:toggle", version.ref = "toggle" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version = "8.6.1" }
+google-services = { id = "com.google.gms.google-services", version = "4.4.0" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.9.20" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }

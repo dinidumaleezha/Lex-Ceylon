@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:titleTextColor="@android:color/white"
+        android:background="@color/colorBackground"
+        app:titleCentered="true">
+
+        <RelativeLayout
+            android:id="@+id/backBtnContainer"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/nav_circle_bg">
+
+            <ImageView
+                android:id="@+id/backBtnIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/back_icon"
+                android:tint="@color/textPrimary"
+                tools:ignore="UseAppTint" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/email_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/textTitle"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:layout_marginStart="50dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorSurface"
+        android:alpha="0.8" />
+
+    <ScrollView
+        android:id="@+id/profileScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/profileRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/profileHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile_icon"/>
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dinidu Maleezha"
+                    android:textColor="@color/textTitle"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/profileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="maleezha1975@gmail.com"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="16dp"
+                    android:layout_marginTop="0dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <!-- Info Card -->
+                <RelativeLayout
+                    android:id="@+id/infoCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="6dp"
+                    android:background="@drawable/card_item_bg2">
+
+                    <LinearLayout
+                        android:id="@+id/infoCardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!-- Name Row -->
+                        <RelativeLayout
+                            android:id="@+id/nameRow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="5dp">
+
+                            <ImageView
+                                android:id="@+id/updatesIcon"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/person_icon"
+                                app:tint="@color/textSecondary" />
+
+                            <TextView
+                                android:id="@+id/userName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dinidu Maleezha"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@id/updatesIcon"
+                                android:layout_centerVertical="true"
+                                android:textSize="16sp"
+                                android:textColor="@color/textPrimary" />
+
+                        </RelativeLayout>
+
+                        <!-- Divider -->
+                        <View
+                            android:id="@+id/divider1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:alpha="0.4"
+                            android:layout_marginVertical="8dp"
+                            android:background="@color/borderColor" />
+
+                        <!-- Phone Row -->
+                        <RelativeLayout
+                            android:id="@+id/phoneRow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="5dp">
+
+                            <ImageView
+                                android:id="@+id/phoneIcon"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/call_icon"
+                                app:tint="@color/textSecondary" />
+
+                            <TextView
+                                android:id="@+id/phoneText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+94 765849851"
+                                android:textSize="16sp"
+                                android:textColor="@color/textPrimary"
+                                android:layout_toEndOf="@id/phoneIcon"
+                                android:layout_marginStart="16dp"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+
+                        <!-- Divider -->
+                        <View
+                            android:id="@+id/divider2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:alpha="0.4"
+                            android:layout_marginVertical="8dp"
+                            android:background="@color/borderColor" />
+
+                        <!-- Email Row -->
+                        <RelativeLayout
+                            android:id="@+id/emailRow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="5dp">
+
+                            <ImageView
+                                android:id="@+id/privacyIcon"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/mail_icon"
+                                app:tint="@color/textSecondary" />
+
+                            <TextView
+                                android:id="@+id/emailText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="maleezha1975@gmail.com"
+                                android:textSize="16sp"
+                                android:textColor="@color/textPrimary"
+                                android:layout_toEndOf="@id/privacyIcon"
+                                android:layout_marginStart="16dp"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Delete Card -->
+                <RelativeLayout
+                    android:id="@+id/deleteCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="6dp"
+                    android:background="@drawable/card_item_bg2">
+
+                    <LinearLayout
+                        android:id="@+id/deleteCardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!-- Delete Option -->
+                        <RelativeLayout
+                            android:id="@+id/deleteRow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="5dp">
+
+                            <ImageView
+                                android:id="@+id/logOutIcon"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/delete_icon"
+                                app:tint="#FF0000" />
+
+                            <TextView
+                                android:id="@+id/deleteText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Delete my account"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@id/logOutIcon"
+                                android:layout_centerVertical="true"
+                                android:textSize="16sp"
+                                android:textColor="#FF0000" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">LexCeylon</string>
+    <string name="default_web_client_id">283769139937-giulh5on7j3pel4ksfc5pj9278vjhhhn.apps.googleusercontent.com</string>
+    <string-array name="cyber_crime_contexts">
+        <item>Select a context</item>
+        <item>support@lexceylon</item>
+        <item>International Classification of Diseases</item>
+        <item>Google</item>
+        <item>Facebook</item>
+        <item>Instagram</item>
+        <item>Twitter / X</item>
+        <item>TikTok</item>
+        <item>Snapchat</item>
+        <item>LinkedIn</item>
+        <item>YouTube</item>
+        <item>Pinterest</item>
+        <item>Reddit</item>
+        <item>WhatsApp</item>
+        <item>Telegram</item>
+        <item>Signal</item>
+        <item>Threads</item>
+        <item>Mastodon</item>
+    </string-array>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!--    ENGLISH string-->
+    <string name="change_language">Change Language</string>
+    <string name="contact_us">Contact us</string>
+    <string name="dark_mode">Dark Theme</string>
+    <string name="check_for_updates">Check Updates</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="settings">Settings</string>
+    <string name="app_setting">App Setting</string>
+    <string name="you_have_no_new_notifications">You have no new notifications.</string>
+    <string name="notification">Notification</string>
+    <string name="good_morning">Good Morning!</string>
+    <string name="get_ai_legal_advice">Get AI Legal Advice</string>
+    <string name="ask_questions_about_your_legal_issues_and_get_instant_ai_powered_answers">Ask questions about your legal issues and get instant AI-powered answers.</string>
+    <string name="recent_chat">Recent Chat</string>
+    <string name="enter_a_short_idea_or_request_here">Enter a short idea or request here...</string>
+    <string name="good_afternoon">Good Afternoon!</string>
+    <string name="good_evening">Good Evening!</string>
+    <string name="good_night">Good Night!</string>
+    <string name="ai_language">English</string>
+    <string name="gemini_api_key">https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDudJCWvLjtB-JkY3qO5ZOZStdbrO6aQks</string>
+
+    <!-- Buttons -->
+    <string name="copy_advice">Advice copied!</string>
+
+    <!-- Section Titles -->
+    <string name="question">Question</string>
+    <string name="law">Law</string>
+    <string name="summary">Summary</string>
+    <string name="authority">Authority</string>
+    <string name="disclaimer">Disclaimer</string>
+
+    <!-- Bullet Prefixes -->
+    <string name="section_prefix">Section: </string>
+    <string name="title_prefix">Title: </string>
+    <string name="summary_prefix">Summary: </string>
+    <string name="warning_prefix">Warning: </string>
+    <string name="confidence_prefix">Confidence: </string>
+    <string name="admin_level_prefix">Administrative Level: </string>
+    <string name="how_to_file_prefix">How to file: </string>
+    <string name="fee_prefix">Fee: </string>
+    <string name="deadline_prefix">Deadline: </string>
+    <string name="documents_prefix">Documents: </string>
+    <string name="contact_prefix">Contact: </string>
+    <string name="location_prefix">Location: </string>
+    <string name="online_url_prefix">Online URL: </string>
+
+    <!-- Toasts / Errors -->
+    <string name="network_error">Network error: %1$s</string>
+    <string name="parse_error">Parse error: %1$s</string>
+</resources>

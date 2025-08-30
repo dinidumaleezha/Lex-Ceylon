@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    tools:context=".Fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/hello_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello'Maleezha."
+                android:textSize="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/textTitle"/>
+
+            <TextView
+                android:id="@+id/greetingText"
+                android:layout_below="@id/hello_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/good_morning"
+                android:textColor="@color/textSecondary"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"/>
+
+
+            <TextView
+                android:id="@+id/assistText"
+                android:layout_below="@id/hello_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How can I assist you right now?"
+                android:visibility="gone"
+                android:textColor="@color/textSecondary"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:layout_marginStart="18dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:id="@+id/btnGetAdvice"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/card_item_bg2"
+                android:layout_height="150dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieAnimationView"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentEnd="true"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/bots"
+                        android:layout_marginTop="20dp" />
+
+                    <TextView
+                        android:id="@+id/diss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ask_questions_about_your_legal_issues_and_get_instant_ai_powered_answers"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/textSecondary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="150dp" />
+
+                    <TextView
+                        android:layout_above="@id/diss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/get_ai_legal_advice"
+                        android:textSize="22dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/textSecondary"
+                        android:textStyle="normal"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/card_item_bg2"
+                    android:layout_height="100dp"
+
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/emailPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:clickable="true">
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/nav_circle_bg"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/email_icon"
+                                android:layout_centerInParent="true"
+                                app:tint="@color/textSecondary" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Email Generator"
+                                android:textSize="18dp"
+                                android:textColor="@color/textSecondary"
+                                android:textStyle="normal"
+                                android:layout_alignParentBottom="true"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/law_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@drawable/card_item_bg2"
+                    android:layout_marginStart="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="6dp">
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/nav_circle_bg"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/search_icon"
+                                android:layout_centerInParent="true"
+                                app:tint="@color/textSecondary" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Search Law"
+                                android:textSize="18dp"
+                                android:textColor="@color/textSecondary"
+                                android:textStyle="normal"
+                                android:layout_alignParentBottom="true"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recent_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_below="@id/hello_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent_chat"
+                    android:layout_weight="1"
+                    android:textColor="@color/textTitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:alpha="0.5"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ios_arrow_rtl_icon"
+                    android:layout_alignParentEnd="true"
+                    app:tint="@color/textSecondary" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

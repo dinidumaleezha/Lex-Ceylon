@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "283769139937",
+    "project_id": "lexceylon-66f82",
+    "storage_bucket": "lexceylon-66f82.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283769139937:android:fc510b069a3df90cd33da0",
+        "android_client_info": {
+          "package_name": "com.dinidu.lexceylon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1YJOTcZXTxx6Z5VUafVIc2XIAL99tD10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
