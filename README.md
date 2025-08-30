@@ -42,29 +42,12 @@ LexCeylone Android app is a bilingual (Sinhala/English) mobile client designed t
    - Enable **Email/Password Authentication**  
    - Download `google-services.json` → place it inside `app/`  
 
-3. **Backend Setup**  
-   - Configure the **API base URL** in `network/ApiClient.java` (for MySQL backend)  
-
-4. **AI Key Setup**  
+3. **AI Key Setup**  
    - Add your **OpenAI API Key** securely (e.g., in `local.properties` or an encrypted config)  
 
-5. **Run the App**  
+4. **Run the App**  
    - Open the project in Android Studio  
    - Build & Run on device/emulator  
-
----
-
-## 📂 Project Structure  
-
-```
-app/
- ├─ data/        # Models & DTOs  
- ├─ network/     # API Clients (Retrofit/OkHttp)  
- ├─ repo/        # Firebase & Backend Repositories  
- ├─ ui/          # Activities, Fragments, Adapters  
- ├─ util/        # Helpers & Utilities  
- └─ ...
-```
 
 ---
 
